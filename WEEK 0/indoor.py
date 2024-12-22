@@ -1,4 +1,6 @@
 def main():
-    Input = input().lower()
-    print(Input)
+    # Print input message in lowercase
+    print(input().lower())
+
+
 main()
