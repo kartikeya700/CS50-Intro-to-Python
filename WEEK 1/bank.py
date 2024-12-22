@@ -1,13 +1,23 @@
 def main():
-    Greet = input("Greeting: ").lower().strip()
-    if Valid(Greet):
+    # Takes input from user
+    greet = input("Greeting: ").lower().strip()
+    # Checks if the greeting is hello or if it starts with an h and returns reward amount accordingly
+    if is_hello(greet):
         print("$0")
-    elif Invalid(Greet):
+    elif starts_with_h(greet):
         print("$20")
     else:
         print("$100")
-def Valid(str_1):
+
+
+# to check if greeting is hello
+def is_hello(str_1):
     return str_1.startswith("hello")
-def Invalid(str_0):
+
+
+# to check if greeting starts with h
+def starts_with_h(str_0):
     return str_0.startswith("h")
+
+
 main()

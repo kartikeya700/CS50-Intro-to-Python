@@ -1,20 +1,24 @@
 def main():
-    Extension = input("File Name: ").lower().strip()
-    if Extension.endswith(".gif"):
+    # take file name as input
+    extension = input("File Name: ").lower().strip()
+    # to check file extension and returns file type accordingly
+    if extension.endswith(".gif"):
         print("image/gif")
-    elif Extension.endswith("jpg"):
+    elif extension.endswith("jpg"):
         print("image/jpeg")
-    elif Extension.endswith("jpeg"):
+    elif extension.endswith("jpeg"):
         print("image/jpeg")
-    elif Extension.endswith("png"):
+    elif extension.endswith("png"):
         print("image/png")
-    elif Extension.endswith("pdf"):
+    elif extension.endswith("pdf"):
         print("application/pdf")
-    elif Extension.endswith("txt"):
+    elif extension.endswith("txt"):
         print("text/plain")
-    elif Extension.endswith("zip"):
+    elif extension.endswith("zip"):
         print("application/zip")
+    # default case
     else:
         print("application/octet-stream")
+
+
 main()
- 
